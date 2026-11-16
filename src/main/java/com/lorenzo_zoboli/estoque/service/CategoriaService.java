@@ -15,7 +15,7 @@ public class CategoriaService {
     public CategoriaService(CategoriaRepository  categoriaRepository) {
         this.categoriaRepository = categoriaRepository;
     }
-
+/**
     @Transactional // Garante que as alterações sejam commitadas somente caso todas as operações sejam executadas com sucesso, caso contrário dá rollback
     public CategoriaResponseDTO criar(CategoriaRequestDTO dto) {
         // Verifica se já existe uma classe de mesmo nome antes de criar (ignorando maiúsculas e minúsculas)
@@ -25,4 +25,5 @@ public class CategoriaService {
 
         // Traz os dados do DTO (trazidos da web)
     }
+    **/
 }

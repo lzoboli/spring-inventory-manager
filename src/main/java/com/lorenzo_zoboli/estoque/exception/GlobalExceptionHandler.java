@@ -44,7 +44,7 @@ public class GlobalExceptionHandler {
                     .toList();
             ErroResponseDTO erro = new ErroResponseDTO(
                     LocalDateTime.now(),
-                    HttpStatus.BAD_REQUEST.value(),,
+                    HttpStatus.BAD_REQUEST.value(),
                     "Erro de validação nos campos enviados",
                     detalhes
             );
