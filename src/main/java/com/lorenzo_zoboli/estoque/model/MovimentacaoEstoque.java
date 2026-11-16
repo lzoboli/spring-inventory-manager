@@ -64,12 +64,12 @@ public class MovimentacaoEstoque {
         this.quantidade = quantidade;
     }
 
-    public LocalDateTime getDdataHora() {
+    public LocalDateTime getDataHora() {
         return dataHora;
     }
 
-    public void setDdataHora(LocalDateTime ddataHora) {
-        this.dataHora = ddataHora;
+    public void setDdataHora(LocalDateTime dataHora) {
+        this.dataHora = dataHora;
     }
 
     public String getObservacao() {
