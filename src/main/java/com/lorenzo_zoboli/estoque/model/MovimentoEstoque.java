@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "movimentacoes_estoque")
-public class MovimentacaoEstoque {
+public class MovimentoEstoque {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +29,7 @@ public class MovimentacaoEstoque {
 
     private String observacao;
 
-    public MovimentacaoEstoque() {
+    public MovimentoEstoque() {
     }
 
     public Long getId() {

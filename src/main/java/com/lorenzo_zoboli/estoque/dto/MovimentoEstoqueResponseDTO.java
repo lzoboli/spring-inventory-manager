@@ -1,11 +1,11 @@
 package com.lorenzo_zoboli.estoque.dto;
 
-import com.lorenzo_zoboli.estoque.model.MovimentacaoEstoque;
+import com.lorenzo_zoboli.estoque.model.MovimentoEstoque;
 import com.lorenzo_zoboli.estoque.model.enums.TipoMovimentacao;
 
 import java.time.LocalDateTime;
 
-public record MovimentacaoResponseDTO (
+public record MovimentoEstoqueResponseDTO(
         Long id,
         Long idProduto,
         String nomeProduto,
@@ -15,8 +15,8 @@ public record MovimentacaoResponseDTO (
         LocalDateTime dtHora,
         String observacao
 ) {
-    public static MovimentacaoResponseDTO fromEntity(MovimentacaoEstoque mov) {
-        return new MovimentacaoResponseDTO(
+    public static MovimentoEstoqueResponseDTO fromEntity(MovimentoEstoque mov) {
+        return new MovimentoEstoqueResponseDTO(
                 mov.getId(),
                 mov.getProduto().getId(),
                 mov.getProduto().getNome(),

@@ -4,7 +4,7 @@ import com.lorenzo_zoboli.estoque.model.enums.TipoMovimentacao;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
-public record MovimentacaoRequestDTO (
+public record MovimentoEstoqueRequestDTO(
         @NotNull(message = "O ID do produto é obrigatório")
         Long idProduto,
         @NotNull(message = "O tipo de movimentação (ENTRADA ou SAIDA) é obrigatório")
